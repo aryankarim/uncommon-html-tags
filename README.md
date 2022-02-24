@@ -21,6 +21,7 @@
 ```
 
 `<area>` Defines an area inside an image map
+`<map>` Defines an image map
 
 ```html
 <map name="workmap">
@@ -66,6 +67,7 @@
 ```
 
 `<audio>` Defines embedded sound content
+`<source>` Defines multiple media resources for media elements `<video>` and `<audio>`
 
 ```html
 <audio controls>
@@ -149,6 +151,7 @@
 ```
 
 `<code>` Defines a piece of computer code
+`<pre>` Defines preformatted text
 
 ```html
 <p>
@@ -293,214 +296,268 @@
 </figure>
 ```
 
-<i> Defines a part of text in an alternate voice or mood
+`<iframe>` Defines an inline frame
 
 ```html
-
+<iframe
+  src="https://www.w3schools.com"
+  title="W3Schools Free Online Web Tutorials"
+>
+</iframe>
 ```
 
-<iframe>	Defines an inline frame
+`<kbd>` Defines keyboard input
 
 ```html
-
+<p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
 ```
 
-<kbd> Defines keyboard input
+`<link>` Defines the relationship between a document and an external resource (most used to link to style sheets)
 
 ```html
-
+<head>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 ```
 
-<link>	Defines the relationship between a document and an external resource (most used to link to style sheets)
+`<mark>` Defines marked/highlighted text
 
 ```html
-
+<p>Do not forget to buy <mark>milk</mark> today.</p>
 ```
 
-<map> Defines an image map
+`<meter>` Defines a scalar measurement within a known range (a gauge)
 
 ```html
+<label for="disk_c">Disk usage C:</label>
+<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br />
 
+<label for="disk_d">Disk usage D:</label>
+<meter id="disk_d" value="0.6">60%</meter>
 ```
 
-<mark> Defines marked/highlighted text
+`<noscript>` Defines an alternate content for users that do not support client-side scripts
 
 ```html
-
+<noscript>Your browser does not support JavaScript!</noscript>
 ```
 
-<meter> Defines a scalar measurement within a known range (a gauge)
+`<object>` Defines a container for an external application
 
 ```html
-
+<object data="snippet.html" width="500" height="200"></object>
+<object data="video.mp4" width="400" height="300"></object>
 ```
 
-<noscript> Defines an alternate content for users that do not support client-side scripts
+`<optgroup>` Defines a group of related options in a drop-down list
 
 ```html
-
+<select name="cars" id="cars">
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
 ```
 
-<object> Defines a container for an external application
+`<output>` Defines the result of a calculation
 
 ```html
-
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  <input type="range" id="a" value="50" /><!-- hihi -->
+  +<input type="number" id="b" value="25" /> =<output
+    name="x"
+    for="a b"
+  ></output>
+</form>
 ```
 
-<optgroup>	Defines a group of related options in a drop-down list
+`<param>` Defines a parameter for an object
 
 ```html
-
+<object data="horse.wav">
+  <param name="autoplay" value="true" />
+</object>
 ```
 
-<output> Defines the result of a calculation
+`<picture>` Defines a container for multiple image resources
+`<source>` Defines multiple media resources for media elements `<video>` and `<audio>`
 
 ```html
-
+<picture>
+  <source media="(min-width:650px)" srcset="img_pink_flowers.jpg" />
+  <source media="(min-width:465px)" srcset="img_white_flower.jpg" />
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;" />
+</picture>
 ```
 
-<param>	Defines a parameter for an object
+`<progress>` Represents the progress of a task
 
 ```html
-
+<label for="file">Downloading progress:</label>
+<progress id="file" value="32" max="100">32%</progress>
 ```
 
-<picture> Defines a container for multiple image resources
+`<q>` Defines a short quotation, puts quotation automatically
 
 ```html
-
+<p>
+  WWF's goal is to:
+  <q>Build a future where people live in harmony with nature.</q>
+  We hope they succeed.
+</p>
 ```
 
-<pre>	Defines preformatted text
+`<ruby>` Defines a ruby annotation (for East Asian typography)
+`<rt>` Defines an explanation/pronunciation of characters (for East Asian typography)
+`<rp>` Defines what to show in browsers that do not support ruby annotations
 
 ```html
-
+<ruby> 漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp> </ruby>
 ```
 
-<progress>	Represents the progress of a task
+`<s>` Defines text that is no longer correct
 
 ```html
-
+<p><s>Only 50 tickets left!</s></p>
+<p>SOLD OUT!</p>
 ```
 
-<q>	Defines a short quotation
+`<samp>` Defines sample output from a computer program, gives it mono/terminal font
 
 ```html
-
+<p>Message from my computer:</p>
+<p>
+  <samp>File not found.<br />Press F1 to continue</samp>
+</p>
 ```
 
-<rp>	Defines what to show in browsers that do not support ruby annotations
+`<section>` Defines a section in a document
 
 ```html
+<section>
+  <h2>WWF History</h2>
+  <p>
+    The World Wide Fund for Nature (WWF) is an international organization
+    working on issues regarding the conservation, research and restoration of
+    the environment, formerly named the World Wildlife Fund. WWF was founded in
+    1961.
+  </p>
+</section>
 
+<section>
+  <h2>WWF's Symbol</h2>
+  <p>
+    The Panda has become the symbol of WWF. The well-known panda logo of WWF
+    originated from a panda named Chi Chi that was transferred from the Beijing
+    Zoo to the London Zoo in the same year of the establishment of WWF.
+  </p>
+</section>
 ```
 
-<rt>	Defines an explanation/pronunciation of characters (for East Asian typography)
+`<small>` Defines smaller text
 
 ```html
-
+<p>This is some normal text.</p>
+<p><small>This is some smaller text.</small></p>
 ```
 
-<ruby>	Defines a ruby annotation (for East Asian typography)
+`<strong>` and `b` Defines important text. Makes it bold
 
 ```html
-
+<strong>This text is important!</strong> <b>This text is important!</b>
 ```
 
-<s>	Defines text that is no longer correct
+`<sub>` Defines subscripted text
+`<sup>` Defines superscripted text
 
 ```html
-
+<p>This text contains <sub>a</sub> text.</p>
+<p>This text contains <sup>a</sup> text.</p>
 ```
 
-<samp>	Defines sample output from a computer program
+`<template>` Defines a container for content that should be hidden when the page loads
 
 ```html
+<button onclick="showContent()">Show hidden content</button>
 
+<template>
+  <h2>Flower</h2>
+  <img src="img_white_flower.jpg" width="214" height="204" />
+</template>
+
+<script>
+  function showContent() {
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    document.body.appendChild(clon);
+  }
+</script>
 ```
 
-<section>	Defines a section in a document
+`<time>` Defines a specific time (or datetime)
 
 ```html
+<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
 
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
 ```
 
-<small>	Defines smaller text
+`<track>` Defines text tracks for media elements `<video>` and `<audio>`
 
 ```html
-
+<video width="320" height="240" controls>
+  <source src="forrest_gump.mp4" type="video/mp4" />
+  <source src="forrest_gump.ogg" type="video/ogg" />
+  <track
+    src="fgsubtitles_en.vtt"
+    kind="subtitles"
+    srclang="en"
+    label="English"
+  />
+  <track
+    src="fgsubtitles_no.vtt"
+    kind="subtitles"
+    srclang="no"
+    label="Norwegian"
+  />
+</video>
 ```
 
-<source>	Defines multiple media resources for media elements (<video> and <audio>)
+`<u>`Defines some text that is unarticulated and styled differently from normal text
 
 ```html
-
+<p>This is some <u>mispeled</u> text.</p>
 ```
 
-<strike>	Not supported in HTML5. Use <del> or <s> instead.
-Defines strikethrough text
+`<var>` Defines a variable and gives it a different style
 
 ```html
-
+<p>
+  The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where
+  <var>b</var> is the base, and <var>h</var> is the vertical height.
+</p>
 ```
 
-<strong>	Defines important text
+`<video>` Defines embedded video content
 
 ```html
-
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4" />
+  <source src="movie.ogg" type="video/ogg" />
+  Your browser does not support the video tag.
+</video>
 ```
 
-
-<sub>	Defines subscripted text
-
-```html
-
-```
-
-<sup>	Defines superscripted text
+`<wbr>` Defines a possible line-break. Conditional break when resizing window
 
 ```html
-
-```
-
-<template>	Defines a container for content that should be hidden when the page loads
-
-```html
-
-```
-
-<time>	Defines a specific time (or datetime)
-
-```html
-
-```
-
-<track>	Defines text tracks for media elements (<video> and <audio>)
-
-```html
-
-```
-
-<u>	Defines some text that is unarticulated and styled differently from normal text
-
-```html
-
-```
-
-<var>	Defines a variable
-
-```html
-
-```
-
-<video>	Defines embedded video content
-
-```html
-
-```
-
-<wbr>	Defines a possible line-break
-
-```html
-
+<p>
+  To learn AJAX, you must be familiar with the XML<wbr />Httpppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp<wbr />Request
+  Object.
+</p>
 ```
