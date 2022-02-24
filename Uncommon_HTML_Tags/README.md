@@ -102,16 +102,21 @@
 </html>
 ```
 
-`<bdi>` Isolates a part of text that might be formatted in a different direction from other text outside it.keeps the direction as is.
+`<bdi>` Isolates a part of text that might be formatted in a different direction from other text outside it.
 
 ```html
-<bdo dir="rtl"> This text will go right-to-left. </bdo>
+ul>
+  <li>User <bdi>hrefs</bdi>: 60 points</li>
+  <li>User <bdi>jdoe</bdi>: 80 points</li>
+  <li>User <bdi>إيان</bdi>: 90 points</li>
+</ul>
 ```
 
 `<bdo>` Overrides the current text direction
 
 ```html
-<p><bdo>This paragraph will go right-to-left.</bdo></p>
+<p>This paragraph will go left-to-right.</p>  
+<p><bdo dir="rtl">This paragraph will go right-to-left.</bdo></p>  
 ```
 
 `<blockquote>` Defines a section that is quoted from another source
