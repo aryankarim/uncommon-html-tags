@@ -1,6 +1,4 @@
-# html-semantic-elements
-
-## Least Known Tags
+# Uncommon HTML Tags
 
 `<abbr>` Defines an abbreviation or an acronym
 
