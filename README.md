@@ -1,6 +1,5 @@
 # Least Common HTML Elements With Brief Descriptions
 
-A website for a small business of car detail and ceramic coating services.
 
 ## Description
 
