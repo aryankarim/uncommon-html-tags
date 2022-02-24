@@ -1,8 +1,5 @@
 # Least Common HTML Elements With Brief Descriptions
 
-
-## Description
-
 Contains all HTML elements that are not commonly used amongst newbie developers. Has brief explanations and examples for each element
 
 ## Authors
