@@ -18,7 +18,7 @@
 </address>
 ```
 
-`<area>` Defines an area inside an image map
+`<area>` Defines an area inside an image map <br>
 `<map>` Defines an image map
 
 ```html
@@ -64,7 +64,7 @@
 </aside>
 ```
 
-`<audio>` Defines embedded sound content
+`<audio>` Defines embedded sound content <br>
 `<source>` Defines multiple media resources for media elements `<video>` and `<audio>`
 
 ```html
@@ -163,7 +163,7 @@ ul>
 </p>
 ```
 
-`<col>` Specifies column properties for each column within a `<colgroup>` element
+`<col>` Specifies column properties for each column within a `<colgroup>` element <br>
 `<colgroup>` Specifies a group of one or more columns in a table for formatting
 
 ```html
@@ -213,9 +213,9 @@ ul>
 </datalist>
 ```
 
-`<dd>` Defines a description/value of a term in a description list
-`<dl>` Defines a description list
-`<dt>` Defines a term/name in a description list
+`<dd>` Defines a description/value of a term in a description list <br>
+`<dl>` Defines a description list <br>
+`<dt>` Defines a term/name in a description list <br>
 
 ```html
 <dl>
@@ -226,14 +226,14 @@ ul>
 </dl>
 ```
 
-`<del>` Defines text that has been deleted from a document
+`<del>` Defines text that has been deleted from a document <br>
 `<ins>` Defines a text that has been inserted into a document
 
 ```html
 <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
 ```
 
-`<details>` Defines additional details that the user can view or hide
+`<details>` Defines additional details that the user can view or hide <br>
 `<summary>` Defines a visible heading for a `<details>` element
 
 ```html
@@ -278,7 +278,7 @@ ul>
 <embed type="text/html" src="snippet.html" width="500" height="200" />
 ```
 
-`<fieldset>` Groups related elements in a form
+`<fieldset>` Groups related elements in a form  <br>
 `<legend>` Defines a caption for a `<fieldset>` element
 
 ```html
@@ -289,7 +289,7 @@ ul>
 </fieldset>
 ```
 
-`<figcaption>` Defines a caption for a `<figure>` element
+`<figcaption>` Defines a caption for a `<figure>` element  <br>
 `<figure>` Specifies self-contained content
 
 ```html
@@ -387,7 +387,7 @@ ul>
 </object>
 ```
 
-`<picture>` Defines a container for multiple image resources
+`<picture>` Defines a container for multiple image resources  <br>
 `<source>` Defines multiple media resources for media elements `<video>` and `<audio>`
 
 ```html
@@ -415,8 +415,8 @@ ul>
 </p>
 ```
 
-`<ruby>` Defines a ruby annotation (for East Asian typography)
-`<rt>` Defines an explanation/pronunciation of characters (for East Asian typography)
+`<ruby>` Defines a ruby annotation (for East Asian typography) <br>
+`<rt>` Defines an explanation/pronunciation of characters (for East Asian typography) <br>
 `<rp>` Defines what to show in browsers that do not support ruby annotations
 
 ```html
@@ -475,7 +475,7 @@ ul>
 <strong>This text is important!</strong> <b>This text is important!</b>
 ```
 
-`<sub>` Defines subscripted text
+`<sub>` Defines subscripted text <br>
 `<sup>` Defines superscripted text
 
 ```html
